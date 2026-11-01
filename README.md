@@ -138,7 +138,7 @@ kuyou-nestjs-vue/
 │   ├── seed.sql                   # admin 表 + 演示账号
 │   ├── ai-tables.sql              # AI 能力层 6 张表
 │   └── finance-stocktake-tables.sql  # 收付款核销/盘点/操作日志 3 张扩展表（schema 之后执行）
-├── 订货通小程序/                   # [开源] uniapp Vue2 客户订货商城（对接 /kuyou 后端）
+├── 订货通小程序/                   # [开源] uniapp vue3 客户订货商城（对接 /kuyou 后端）
 └── 生产小程序/                     # [开源] uniapp Vue3 MES 生产现场（对接 /kuyou/applet 后端）
 ```
 
@@ -407,7 +407,7 @@ node backend/scripts/audit-pages.js     # 页面模块覆盖审计（另含 289 
 ```
 
 尚未一比一（不影响上述通用能力）：
-- ✅ **移动端小程序（前端，开源）**：仓库已附带 `订货通小程序/`（uniapp Vue2，客户订货商城）与 `生产小程序/`（uniapp Vue3，MES 生产现场）两套开源 uniapp 前端，对接同一 NestJS 后端，详见上方「移动端小程序（开源）」章节。原系统 `api/controller/applet/*`（共 100+）的后端接口按小程序实际调用按需补齐，PC 管理后台口径不受影响。
+- ✅ **移动端小程序（前端，开源）**：仓库已附带 `订货通小程序/`（uniapp vue3，客户订货商城）与 `生产小程序/`（uniapp Vue3，MES 生产现场）两套开源 uniapp 前端，对接同一 NestJS 后端，详见上方「移动端小程序（开源）」章节。原系统 `api/controller/applet/*`（共 100+）的后端接口按小程序实际调用按需补齐，PC 管理后台口径不受影响。
 - ℹ️ **MES 生产小程序后端**：原压缩包未提供 MES 后端实现；本仓库 `生产小程序/` 为前端源码，其所需的生产类接口复用 PC 端的单据 / 专项引擎（`/kuyou/*`）。
 - ℹ️ 截图 1「概述」、2「常见问题」、3「系统运行部分问题」、101「安装注意事项」为文档说明页，非功能页面
 
