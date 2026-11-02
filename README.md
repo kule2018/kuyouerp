@@ -1,4 +1,4 @@
-# 进销存 ERP —— NestJS + Vue3
+# ERP —— NestJS + Vue3
 
 
 
